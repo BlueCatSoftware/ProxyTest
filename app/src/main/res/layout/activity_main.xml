@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/proxy_host_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Proxy Host"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/proxy_host_edit_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/proxy_host_label" />
+
+    <TextView
+        android:id="@+id/proxy_port_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/proxy_host_edit_text"
+        android:layout_marginTop="16dp"
+        android:text="Proxy Port"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/proxy_port_edit_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/proxy_port_label"
+        android:inputType="number" />
+
+    <Button
+        android:id="@+id/save_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/proxy_port_edit_text"
+        android:layout_marginTop="16dp"
+        android:text="Save" />
+
+</RelativeLayout>
